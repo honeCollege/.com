@@ -7,7 +7,8 @@ const defaultBlueTheme = createTheme({
       light: '#7aa0e7',
       dark: '#1e4fa5',
       contrastText: '#FAF1E4',
-      contrastTextDark: '#8c5d1a' 
+      contrastTextDark: '#8c5d1a',
+      contrastTextLight: '#ebc895'
     },
     typography: {
       fontFamily: 'Verdana, Geneva, Tahoma, sans-serif',

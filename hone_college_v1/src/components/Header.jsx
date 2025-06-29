@@ -14,7 +14,18 @@ export default function NavigationHeader() {
   return (
     <ThemeProvider theme={defaultBlueTheme}>
       <AppBar position="static" color="secondary" elevation={12} sx={{ boxShadow: 4 }}>
-          <Toolbar sx={{ height: 110 }}>
+          <Toolbar 
+            sx={{
+              height: 90,
+              mt: 2,
+              display: 'flex',
+              flexDirection: 'row',
+              flexWrap: 'wrap',
+              width: '100%',
+              gap: '10px',
+              boxSizing: 'border-box',
+            }}
+          >
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               Hone College
             </Typography>

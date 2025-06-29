@@ -21,7 +21,9 @@ export default function App() {
       <Router>
         <NavigationHeader/>
 
-        <Container sx={{ mt: 4 }}>
+        <Container
+          sx={{mt: 4 }}
+        >
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<About />} />

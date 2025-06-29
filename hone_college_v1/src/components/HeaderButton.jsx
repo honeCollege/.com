@@ -14,15 +14,17 @@ export default function HeaderButton({ text, link }) {
       to={link}
      sx={{
         color: theme.palette.primary.contrastText,
-        fontSize: '1.2rem',
+        fontSize: '18px',
         fontWeight: '600',
         textTransform: 'none',
         letterSpacing: '0.03em',
+        borderRadius: '20px',
+        padding: '8px 20px',
         '&:hover': {
           transform: 'translateY(-3px)',    
           borderColor: theme.palette.primary.light,
-          backgroundColor: theme.palette.primary.light,  // Add background color change here
-          color: theme.palette.primary.contrastText,    // Optional: keep text color consistent
+          backgroundColor: theme.palette.primary.contrastText,  // Add background color change here
+          color: theme.palette.primary.contrastTextDark,    // Optional: keep text color consistent
         },
       }}
     >
