@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/honeCollege.com/static/css/main.92c8d4eb.css",
-    "main.js": "/honeCollege.com/static/js/main.9ff3beeb.js",
+    "main.css": "/honeCollege.com/static/css/main.9b8d651c.css",
+    "main.js": "/honeCollege.com/static/js/main.73a1020d.js",
     "static/js/453.caa19ce4.chunk.js": "/honeCollege.com/static/js/453.caa19ce4.chunk.js",
     "index.html": "/honeCollege.com/index.html",
-    "main.92c8d4eb.css.map": "/honeCollege.com/static/css/main.92c8d4eb.css.map",
-    "main.9ff3beeb.js.map": "/honeCollege.com/static/js/main.9ff3beeb.js.map",
+    "main.9b8d651c.css.map": "/honeCollege.com/static/css/main.9b8d651c.css.map",
+    "main.73a1020d.js.map": "/honeCollege.com/static/js/main.73a1020d.js.map",
     "453.caa19ce4.chunk.js.map": "/honeCollege.com/static/js/453.caa19ce4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.92c8d4eb.css",
-    "static/js/main.9ff3beeb.js"
+    "static/css/main.9b8d651c.css",
+    "static/js/main.73a1020d.js"
   ]
 }
