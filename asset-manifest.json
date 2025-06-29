@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/honeCollegeV1/static/css/main.92c8d4eb.css",
-    "main.js": "/honeCollegeV1/static/js/main.668591ab.js",
-    "static/js/453.caa19ce4.chunk.js": "/honeCollegeV1/static/js/453.caa19ce4.chunk.js",
-    "index.html": "/honeCollegeV1/index.html",
-    "main.92c8d4eb.css.map": "/honeCollegeV1/static/css/main.92c8d4eb.css.map",
-    "main.668591ab.js.map": "/honeCollegeV1/static/js/main.668591ab.js.map",
-    "453.caa19ce4.chunk.js.map": "/honeCollegeV1/static/js/453.caa19ce4.chunk.js.map"
+    "main.css": "/honeCollege.com/static/css/main.92c8d4eb.css",
+    "main.js": "/honeCollege.com/static/js/main.9ff3beeb.js",
+    "static/js/453.caa19ce4.chunk.js": "/honeCollege.com/static/js/453.caa19ce4.chunk.js",
+    "index.html": "/honeCollege.com/index.html",
+    "main.92c8d4eb.css.map": "/honeCollege.com/static/css/main.92c8d4eb.css.map",
+    "main.9ff3beeb.js.map": "/honeCollege.com/static/js/main.9ff3beeb.js.map",
+    "453.caa19ce4.chunk.js.map": "/honeCollege.com/static/js/453.caa19ce4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.92c8d4eb.css",
-    "static/js/main.668591ab.js"
+    "static/js/main.9ff3beeb.js"
   ]
 }
