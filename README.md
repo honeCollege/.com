@@ -6,3 +6,5 @@ git clone https://github.com/ryankahinglee/honeCollegeV1.git
 cd honeCollegeV1
 npm install
 npm start
+
+To deploy to gh pages: npm run deploy
