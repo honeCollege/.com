@@ -1,7 +1,5 @@
-import * as React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
-import { Link } from "react-router-dom";
-import { AppBar, Toolbar, Typography, Button } from '@mui/material';
+import { AppBar, Toolbar, Typography} from '@mui/material';
 import defaultBlueTheme from '../css/colorTheme';
 import HeaderButton from './HeaderButton';
 
@@ -13,7 +11,7 @@ import HeaderButton from './HeaderButton';
 export default function NavigationHeader() {
   return (
     <ThemeProvider theme={defaultBlueTheme}>
-      <AppBar position="static" color="secondary" elevation={12} sx={{ boxShadow: 4 }}>
+      <AppBar position="sticky" color="secondary" elevation={12} sx={{ boxShadow: 4 }}>
           <Toolbar 
             sx={{
               height: 90,

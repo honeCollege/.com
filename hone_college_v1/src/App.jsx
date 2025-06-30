@@ -4,7 +4,7 @@ import { Container } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import HomePage from "./components/HomePage";
 import "./css/colorPalette.css";
-import defaultBlueTheme from "./css/colorTheme";
+import theme from "./css/colorTheme";
 import NavigationHeader from "./components/Header";
 
 function About() {
@@ -17,12 +17,13 @@ function Contact() {
 
 export default function App() {
   return (
-    <ThemeProvider theme={defaultBlueTheme}>
+    <ThemeProvider theme={theme}>
       <Router>
         <NavigationHeader/>
 
         <Container
-          sx={{mt: 4 }}
+          maxWidth={false}
+          disableGutters
         >
           <Routes>
             <Route path="/" element={<HomePage />} />

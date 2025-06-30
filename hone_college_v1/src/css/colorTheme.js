@@ -1,22 +1,25 @@
 import { createTheme } from '@mui/material/styles';
 
-const defaultBlueTheme = createTheme({
+const theme = createTheme({
   palette: {
     primary: {
-      main: '#327adb',
-      light: '#7aa0e7',
-      dark: '#1e4fa5',
-      contrastText: '#FAF1E4',
-      contrastTextDark: '#8c5d1a',
-      contrastTextLight: '#ebc895'
-    },
-    typography: {
-      fontFamily: 'Verdana, Geneva, Tahoma, sans-serif',
+      light: '#68bbe3',  // Baby Blue
+      main: '#0e86d4',   // Blue Grotto
+      dark: '#055c9d',   // Blue
+      contrastText: '#ffffff',
     },
     secondary: {
-      main: '#327adb',
-    }
+      main: '#003060',   // Navy Blue
+      contrastText: '#ffffff',
+    },
+    background: {
+      default: '#f5faff', // Optional soft background
+      paper: '#ffffff',
+    },
+    text: {
+      primary: '#003060', // Navy Blue
+    },
   },
 });
 
-export default defaultBlueTheme;
+export default theme;
