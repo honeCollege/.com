@@ -57,7 +57,7 @@ export default function AboutPage() {
       <div
         style={{
           position: 'relative',
-          width: '100vw',
+          width: '100%',
           height: useFixedHeight ? '600px' : undefined,
           paddingTop: useFixedHeight ? undefined : '66.67%',
           backgroundImage: `url(${handWriting})`,
@@ -122,10 +122,9 @@ export default function AboutPage() {
           Who We Are
         </h1>
         <p style={{ maxWidth: '800px', fontSize: '1.125rem', lineHeight: '1.6'}}>
-          We are HoneCollege, a group of tutors who are passionate about helping students grow into confident,
-          capable learners. We're looking to help shape future generations into becoming independent thinkers
-          by having a real understanding of our content rather than solely chasing marks at school. Whether you're aiming to
-          catch up or get ahead, we'll help hone your skills and unlock your full potential.
+          We are HoneCollege, a team of passionate math tutors dedicated to helping students truly understand math—not just memorise it.
+          Our approach rewires the way students think about numbers, focusing on deep comprehension over rote learning.
+          Whether you're looking to build confidence, catch up, or get ahead, we'll help hone your mathematical thinking and unlock your full potential.
         </p>
       </div>
       <div

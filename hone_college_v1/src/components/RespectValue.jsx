@@ -93,7 +93,7 @@ export default function RespectValue() {
             lineHeight: '1.6',
           }}
         >
-          Respect comes from both the student and the teacher through how we share knowledge and wisdom
+          Respect comes from both the student and the teacher through how we share knowledge and wisdom.
         </p>
       </div>
     </div>

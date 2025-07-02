@@ -4,12 +4,13 @@ import { Container } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
+import BottomNavigation from "./components/BottomNavigation";
 import "./css/colorPalette.css";
 import theme from "./css/colorTheme";
 import NavigationHeader from "./components/Header";
 
-function Contact() {
-  return <h2>Contact Page</h2>;
+function Courses() {
+  return <h2>COURSES</h2>;
 }
 
 export default function App() {
@@ -25,10 +26,11 @@ export default function App() {
           <Routes>
             <Route path="/.com" element={<HomePage />} />
             <Route path="/.com/about" element={<AboutPage />} />
-            <Route path="/.com/contact" element={<Contact />} />
+            <Route path="/.com/courses" element={<Courses />} />
           </Routes>
         </Container>
       </Router>
+      <BottomNavigation/>
     </ThemeProvider>
   );
 }

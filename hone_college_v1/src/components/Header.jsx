@@ -29,7 +29,7 @@ export default function NavigationHeader() {
             </Typography>
               <HeaderButton text="Home" link="/.com" />
               <HeaderButton text="About" link="/.com/about" />
-              <HeaderButton text="Contact" link="/.com/contact" />
+              <HeaderButton text="Courses" link="/.com/courses" />
           </Toolbar>
         </AppBar>
     </ThemeProvider>

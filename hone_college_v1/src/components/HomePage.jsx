@@ -77,7 +77,7 @@ export default function HomePage() {
 
           }}
         >
-          "Hone your skills. Become your best self."
+          "Hone yourself. Become an academic weapon."
         </h1>
       </div>
       </div>
