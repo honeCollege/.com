@@ -24,9 +24,23 @@ export default function NavigationHeader() {
               boxSizing: 'border-box',
             }}
           >
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Hone College
-            </Typography>
+     <Typography
+     paddingLeft={'20px'}
+  variant="h5"
+  component="div"
+  sx={{
+    flexGrow: 1,
+    fontWeight: 'bold',
+    fontStyle: 'italic',
+    fontSize: { xs: '1.5rem', sm: '2rem' },
+    color: 'white',
+    userSelect: 'none',
+    cursor: 'default',
+  }}
+>
+  Hone College
+</Typography>
+
               <HeaderButton text="Home" link="/.com" />
               <HeaderButton text="About" link="/.com/about" />
               <HeaderButton text="Courses" link="/.com/courses" />

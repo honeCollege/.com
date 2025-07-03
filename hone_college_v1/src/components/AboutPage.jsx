@@ -117,7 +117,8 @@ export default function AboutPage() {
         <h1 style={{
             fontSize: '2.5rem',
             marginBottom: '1rem',
-            color: theme.palette.primary.dark
+            color: theme.palette.primary.dark,
+            textShadow: '1px 1px 3px rgba(0, 0, 0, 0.3)'
           }}>
           Who We Are
         </h1>
@@ -153,7 +154,8 @@ export default function AboutPage() {
            <h1 style={{
             fontSize: '2.5rem',
             marginBottom: '1rem',
-            color: theme.palette.primary.dark
+            color: theme.palette.primary.dark,
+            textShadow: '1px 1px 3px rgba(0, 0, 0, 0.3)'
           }}>
           Our Values
         </h1>

@@ -8,10 +8,7 @@ import BottomNavigation from "./components/BottomNavigation";
 import "./css/colorPalette.css";
 import theme from "./css/colorTheme";
 import NavigationHeader from "./components/Header";
-
-function Courses() {
-  return <h2>COURSES</h2>;
-}
+import CoursesPage from "./components/CoursesPage"
 
 export default function App() {
   return (
@@ -26,7 +23,7 @@ export default function App() {
           <Routes>
             <Route path="/.com" element={<HomePage />} />
             <Route path="/.com/about" element={<AboutPage />} />
-            <Route path="/.com/courses" element={<Courses />} />
+            <Route path="/.com/courses" element={<CoursesPage />} />
           </Routes>
         </Container>
       </Router>

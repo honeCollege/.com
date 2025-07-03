@@ -81,6 +81,126 @@ export default function HomePage() {
         </h1>
       </div>
       </div>
+      <div
+      ref={whoRef}
+          className={`fade-in-section ${isVisible ? 'visible' : ''}`}
+  style={{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: '4rem 2rem',
+    backgroundColor: '#f8f9fa',
+    color: '#333',
+  }}
+>
+   <h1
+    style={{
+      fontSize: '2.5rem',
+      fontStyle: 'italic',
+      marginBottom: '1rem',
+      color: theme.palette.primary.dark,
+      paddingBottom: '20px',
+      textShadow: '1px 1px 3px rgba(0, 0, 0, 0.3)'
+    }}
+  >
+    Why Hone College?
+  </h1>
+
+
+  <div
+    style={{
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: '2rem',
+      maxWidth: '1000px',
+      width: '100%',
+    }}
+  >
+    {/* Flashcard 1 */}
+    <div
+      style={{
+        backgroundColor: 'white',
+        borderRadius: '12px',
+        borderColor: theme.palette.primary.dark,
+        borderWidth: '2px',
+        borderStyle: 'solid',
+        padding: '1.5rem',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+      }}
+    >
+      <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
+        Expert Tutors
+      </div>
+      <div>
+        Our tutors are experienced, passionate, and subject-matter experts who know how to engage and motivate students.
+        They simplify complex concepts and provide targeted support for real academic growth.
+      </div>
+    </div>
+
+    {/* Flashcard 2 */}
+    <div
+      style={{
+        backgroundColor: 'white',
+        borderRadius: '12px',
+        padding: '1.5rem',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+        borderColor: theme.palette.primary.light,
+        borderWidth: '2px',
+        borderStyle: 'solid',
+      }}
+    >
+      <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
+        Supportive Learning Environment
+      </div>
+      <div>
+        We foster a positive, encouraging space where students feel safe to ask questions and take academic risks.
+        Learning thrives when confidence and curiosity are nurtured together.
+      </div>
+    </div>
+
+    {/* Flashcard 3 */}
+    <div
+      style={{
+        backgroundColor: 'white',
+        borderRadius: '12px',
+        padding: '1.5rem',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+        borderColor: theme.palette.primary.light,
+        borderWidth: '2px',
+        borderStyle: 'solid',
+      }}
+    >
+      <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
+        Comprehensive Resources
+      </div>
+      <div>
+        From extensive worksheets to past papers for practice, we provide everything students need to succeed.
+        Our materials are regularly updated to match the current curriculum and exam standards.
+      </div>
+    </div>
+
+    {/* Flashcard 4 */}
+    <div
+      style={{
+        backgroundColor: 'white',
+        borderRadius: '12px',
+        padding: '1.5rem',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+        borderColor: theme.palette.primary.dark,
+        borderWidth: '2px',
+        borderStyle: 'solid',
+      }}
+    >
+      <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
+        Exam Strategies
+      </div>
+      <div>
+        We teach students how to think like teachers — focusing on structure, timing, and common pitfalls.
+        Our strategies help reduce anxiety and boost performance under pressure.
+      </div>
+    </div>
+  </div>
+</div>
     </>
   );
 }

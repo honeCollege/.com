@@ -41,11 +41,14 @@ export default function StickyFooter() {
   return (
   <div style={footerStyle}>
     <div style={innerContainerStyle}>
-      <div style={leftColumnStyle}>
+     <div style={leftColumnStyle}>
         <div style={{ fontWeight: 'bold' }}>Have any questions?</div>
         <div>Feel free to contact us!</div>
         <div style={{ marginTop: '1rem', fontSize: '1.2rem', fontWeight: 'normal', color: '#dddddd' }}>
           Lidcombe 2141, Sydney Australia
+        </div>
+        <div style={{ marginTop: '1rem', fontSize: '1rem', color: '#aaaaaa' }}>
+          © HONECOLLEGE2025
         </div>
       </div>
 
