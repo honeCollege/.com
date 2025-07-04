@@ -1,43 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import MotivationIcon from './motivation.png';
 
 export default function MotivationValue() {
   const theme = useTheme();
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowWidth(window.innerWidth);
-    }
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  // Calculate scale factor for widths less than 1500px (adjust as needed)
-  const scale = windowWidth < 1500 ? windowWidth / 1500 : 1;
-
   return (
     <div
       style={{
-        width: 400 * scale,
+        width: 400,
         backgroundColor: '#f2f2f2',
-        paddingTop: 50 * scale,
-        height: 700 * scale,
+        paddingTop: 50,
+        height: 700,
+        minHeight: 600,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         gap: '1rem',
-        borderRadius: 8 * scale,
+        borderRadius: 8,
         justifyContent: 'center',
-        transformOrigin: 'top left', // scale from top-left corner
+        // removed transformOrigin & scale
       }}
     >
       <div
         style={{
-          width: 300 * scale,
-          height: 300 * scale,
+          width: 300,
+          height: 300,
           borderRadius: '50%',
           backgroundColor: '#b4f7ff',
           display: 'flex',
@@ -50,18 +38,18 @@ export default function MotivationValue() {
           src={MotivationIcon}
           alt="Motivation Icon"
           style={{
-            width: 200 * scale,
+            width: 200,
             objectFit: 'contain',
-            marginTop: 20 * scale,
-            marginRight: 10 * scale,
+            marginTop: 20,
+            marginRight: 10,
           }}
         />
       </div>
 
       <div
         style={{
-          width: 300 * scale,
-          maxWidth: 300 * scale,
+          width: 300,
+          maxWidth: 300,
           textAlign: 'center',
           margin: '0 auto',
           flexShrink: 0,
@@ -70,26 +58,26 @@ export default function MotivationValue() {
         <h2
           style={{
             color: theme.palette.primary.dark,
-            fontSize: 1.8 * scale + 'rem',
+            fontSize: '1.8rem',
             fontWeight: '700',
-            marginBottom: 0.5 * scale + 'rem',
+            marginBottom: '0.5rem',
           }}
         >
           Motivation
         </h2>
         <p
           style={{
-            fontSize: 1.1 * scale + 'rem',
+            fontSize: '21px', // 20 * (1 + 0.05)
             fontWeight: '400',
             lineHeight: '1.6',
-            marginBottom: 0.5 * scale + 'rem',
+            marginBottom: '0.5rem',
           }}
         >
-          We want to cultivate our students at HoneCollege to have a love of learning, a priceless trait to have when the world is vast and full of knowledge.
+          Hone College cultivates students to have a love of learning and a passion for undertstanding new topics.
         </p>
         <p
           style={{
-            fontSize: 1.1 * scale + 'rem',
+            fontSize: '21px',
             fontWeight: '400',
             lineHeight: '1.6',
           }}

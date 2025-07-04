@@ -4,7 +4,7 @@ import '../css/homePage.css';
 import { Button } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
-export default function CoursesPage() {
+export default function MobileCoursesPage() {
   const theme = useTheme();
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -14,8 +14,6 @@ export default function CoursesPage() {
   const whoRef = useRef(null);
   const [isOtherVisible, setIsOtherVisible] = useState(false);
   const otherRef = useRef(null);
-  const scale = windowWidth < 1500 ? windowWidth / 1600 : 1;
-  const gapValue = 100 * scale;
 
   useEffect(() => {
     function handleResize() {
@@ -83,7 +81,7 @@ export default function CoursesPage() {
       >
         <h1
           style={{
-            fontSize: 'clamp(1.5rem, 4vw, 3rem)',
+            fontSize: 'clamp(2rem, 4vw, 3rem)',
             color: 'white',
             whiteSpace: 'nowrap',
            textShadow: `
@@ -124,8 +122,8 @@ export default function CoursesPage() {
   </h1>
   <div
     style={{
-      display: 'grid',
-      gridTemplateColumns: 'repeat(3, 1fr)',
+      display: 'flex',
+      flexDirection: 'column',
       gap: '2rem',
       maxWidth: '1000px',
       width: '100%',
@@ -186,10 +184,10 @@ export default function CoursesPage() {
       }}
     >
       <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
-        Termly Tests
+        Term Tests
       </div>
       <div>
-        Regular termly tests help track progress and highlight areas that need extra focus. 
+        Regular term tests help track progress and highlight areas that need extra focus. 
         These assessments prepare students effectively for school exams and build test-taking confidence.
       </div>
     </div>

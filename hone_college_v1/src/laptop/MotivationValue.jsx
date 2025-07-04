@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from '@mui/material/styles';
-import HandShakeIcon from './hand-shake.png';
+import MotivationIcon from './motivation.png';
 
-export default function RespectValue() {
+export default function MotivationValue() {
   const theme = useTheme();
+
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -14,7 +15,7 @@ export default function RespectValue() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // If window width is less than 1500, shrink by e.g. 80%
+  // Calculate scale factor for widths less than 1500px (adjust as needed)
   const scale = windowWidth < 1500 ? windowWidth / 1500 : 1;
 
   return (
@@ -24,13 +25,14 @@ export default function RespectValue() {
         backgroundColor: '#f2f2f2',
         paddingTop: 50 * scale,
         height: 700 * scale,
+        minHeight: '600px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        gap: `${1 * scale}rem`,
+        gap: '1rem',
         borderRadius: 8 * scale,
         justifyContent: 'center',
-        transformOrigin: 'top center',  // anchor scale from top center
+        transformOrigin: 'top left', // scale from top-left corner
       }}
     >
       <div
@@ -38,7 +40,7 @@ export default function RespectValue() {
           width: 300 * scale,
           height: 300 * scale,
           borderRadius: '50%',
-          backgroundColor: '#e59eff',
+          backgroundColor: '#b4f7ff',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
@@ -46,8 +48,8 @@ export default function RespectValue() {
         }}
       >
         <img
-          src={HandShakeIcon}
-          alt="Leaf Growth"
+          src={MotivationIcon}
+          alt="Motivation Icon"
           style={{
             width: 200 * scale,
             objectFit: 'contain',
@@ -74,26 +76,26 @@ export default function RespectValue() {
             marginBottom: 0.5 * scale + 'rem',
           }}
         >
-          Respect
+          Motivation
         </h2>
         <p
           style={{
-            fontSize: 1.1 * scale + 'rem',
+            fontSize: `${20 * (scale + 0.05)}px`,
             fontWeight: '400',
             lineHeight: '1.6',
             marginBottom: 0.5 * scale + 'rem',
           }}
         >
-          Students at HoneCollege walk the same path through education, we must respect our peers and tutors.
+          Hone College cultivates students to have a love of learning and a passion for undertstanding new topics.
         </p>
         <p
           style={{
-            fontSize: 1.1 * scale + 'rem',
+            fontSize: `${20 * (scale + 0.05)}px`,
             fontWeight: '400',
             lineHeight: '1.6',
           }}
         >
-          Respect comes from both the student and the teacher through how we share knowledge and wisdom.
+          Motivated students understand what education means to them and make an active choice each day to pursue it.
         </p>
       </div>
     </div>
