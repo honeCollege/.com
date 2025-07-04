@@ -114,7 +114,7 @@ export default function MobileNavigationHeader() {
         aria-label="menu"
         onClick={toggleDrawer(true)}
       >
-        <MenuIcon sx={{ fontSize: '40px', paddingRight: '80px' }} />
+        <MenuIcon sx={{ fontSize: '40px', paddingRight: '20px' }} />
       </IconButton>
 
         </Toolbar>
