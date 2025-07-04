@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   AppBar,
   Toolbar,
@@ -27,7 +28,6 @@ const menuItems = [
 export default function MobileNavigationHeader() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const toggleDrawer = (open) => () => {
     setDrawerOpen(open);
@@ -55,8 +55,8 @@ export default function MobileNavigationHeader() {
         {menuItems.map(({ text, link }) => (
           <ListItem
             button
-            component="a"
-            href={link}
+            component={Link}
+            to={link}
             key={text}
             sx={{
               width: '100%',
@@ -64,6 +64,7 @@ export default function MobileNavigationHeader() {
               borderBottom: '1px solid rgba(255,255,255,0.2)',
               justifyContent: 'center',
             }}
+            onClick={toggleDrawer(false)}
           >
             <ListItemText
               primary={text}
@@ -107,34 +108,15 @@ export default function MobileNavigationHeader() {
             Hone College
           </Typography>
 
-          {isMobile ? (
-            <IconButton
-              edge="end"
-              color="inherit"
-              aria-label="menu"
-              onClick={toggleDrawer(true)}
-            >
-              <MenuIcon sx={{ fontSize: '40px', paddingRight: '20px' }} />
-            </IconButton>
-          ) : (
-            <Box>
-              {menuItems.map(({ text, link }) => (
-                <Button
-                  key={text}
-                  href={link}
-                  sx={{
-                    color: 'white',
-                    textTransform: 'none',
-                    fontWeight: 500,
-                    fontSize: { xs: '0.875rem', sm: '1rem' },
-                    ml: 2,
-                  }}
-                >
-                  {text}
-                </Button>
-              ))}
-            </Box>
-          )}
+         <IconButton
+        edge="end"
+        color="inherit"
+        aria-label="menu"
+        onClick={toggleDrawer(true)}
+      >
+        <MenuIcon sx={{ fontSize: '40px', paddingRight: '80px' }} />
+      </IconButton>
+
         </Toolbar>
       </AppBar>
 
