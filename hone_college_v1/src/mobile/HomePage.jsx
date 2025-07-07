@@ -52,12 +52,12 @@ export default function MobileHomePage() {
           position: 'absolute',
           top: '50%',
           left: '50%',
-          transform: 'translate(-50%, -50%)', 
+          transform: 'translate(-50%, -50%)',
           display: 'flex',
           flexDirection: 'column',
           gap: '2rem',
-          padding: '2rem',
-          borderRadius: '8px',
+          padding: '1rem',
+          width: '90vw',
           maxWidth: '600px',
           justifyContent: 'center',
           alignItems: 'center',
@@ -65,20 +65,18 @@ export default function MobileHomePage() {
       >
         <h1
           style={{
-            fontSize: 'clamp(1.5rem, 3vw, 2rem)',
-            textAlign: 'center', 
+            fontSize: 'clamp(1.5rem, 5vw, 2rem)',
+            textAlign: 'center',
             color: 'white',
-            whiteSpace: 'nowrap',
             textShadow: `
               3px 3px 6px rgba(0, 0, 0, 0.9),
               0 0 12px rgba(0, 0, 0, 0.7),
               0 0 24px rgba(0, 0, 0, 0.6),
               2px 2px 20px rgba(0, 0, 0, 0.5)
             `,
-
           }}
         >
-          "Hone yourself. <br/>Become an academic weapon."
+          "Hone yourself. <br />Become an academic weapon."
         </h1>
       </div>
       </div>

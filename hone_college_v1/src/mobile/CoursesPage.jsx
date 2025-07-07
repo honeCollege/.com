@@ -118,7 +118,7 @@ export default function MobileCoursesPage() {
       textShadow: '1px 1px 3px rgba(0, 0, 0, 0.3)',
     }}
   >
-    Why Hone College?
+    What We Offer
   </h1>
   <div
     style={{

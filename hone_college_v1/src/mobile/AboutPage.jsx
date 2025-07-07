@@ -129,49 +129,55 @@ export default function MobileAboutPage() {
         </p>
       </div>
       <div
-         style={{
-            width: '80vw',
-            height: '5px', // Thickness of the line
-            backgroundColor: theme.palette.primary.light, // Replace with any color you want
-            margin: '2rem auto', // Centers it and adds spacing
-            borderRadius: '2px', // Optional: round the edges
-          }}
+        style={{
+          width: '80vw',
+          height: '5px',
+          backgroundColor: theme.palette.primary.light,
+          margin: '2rem auto',
+          borderRadius: '2px',
+        }}
       />
-       <div
-          ref={otherRef}
-          className={`fade-in-section ${isOtherVisible ? 'visible' : ''}`}
+
+      <div
+        ref={otherRef}
+        className={`fade-in-section ${isOtherVisible ? 'visible' : ''}`}
+        style={{
+          fontStyle: 'italic',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          padding: '4rem 1rem', // smaller horizontal padding for small screens
+          backgroundColor: '#f8fdff',
+          color: '#333',
+          textAlign: 'center',
+        }}
+      >
+        <h1
           style={{
-            fontStyle: 'italic',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            padding: '4rem 2rem',
-            backgroundColor: '#f8fdff',
-            color: '#333',
-            textAlign: 'center',
-          }}
-        >
-           <h1 style={{
-            fontSize: '2.5rem',
+            fontSize: 'clamp(1.8rem, 5vw, 2.5rem)',
             marginBottom: '1rem',
             color: theme.palette.primary.dark,
-            textShadow: '1px 1px 3px rgba(0, 0, 0, 0.3)'
-          }}>
+            textShadow: '1px 1px 3px rgba(0, 0, 0, 0.3)',
+          }}
+        >
           Our Values
         </h1>
+
         <div
           style={{
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'space-between', // spreads columns evenly
-            padding: '2rem',
-            width: '1400px' * scale,
-            gap: `${gapValue}px`,
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            padding: '1rem',
+            width: '100%',
+            maxWidth: '1200px', // prevents it from growing too large
+            gap: '1.5rem', // or `${gapValue}px` if defined
           }}
         >
-          <RespectValue/>
-          <MotivationValue/>
-          <GrowthValue/>
+          <RespectValue />
+          <MotivationValue />
+          <GrowthValue />
         </div>
       </div>
     </>

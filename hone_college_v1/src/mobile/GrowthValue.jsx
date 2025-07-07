@@ -1,14 +1,25 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import { useTheme } from '@mui/material/styles';
 import leafGrowth from './leafGrowth.png';
 
 export default function GrowthValue() {
   const theme = useTheme();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const width = windowWidth < 500 ? 350 : 400;
 
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   return (
     <div
       style={{
-        width: 400,
+        width: width,
         backgroundColor: '#f2f2f2',
         paddingTop: 50,
         height: 700,
@@ -19,7 +30,6 @@ export default function GrowthValue() {
         gap: '1rem',
         borderRadius: 8,
         justifyContent: 'center',
-        // removed transformOrigin & scale
       }}
     >
       <div

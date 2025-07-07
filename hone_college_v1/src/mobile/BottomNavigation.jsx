@@ -1,8 +1,21 @@
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
+import { useState, useRef, useEffect } from 'react';
 
 export default function StickyFooter() {
   const theme = useTheme();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const scale = windowWidth < 600 ? windowWidth / 600 : 1;
+  const gap = 50 * scale;
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const footerStyle = {
     bottom: 0,
@@ -27,7 +40,7 @@ export default function StickyFooter() {
     alignItems: 'flex-start',
     width: '100%',
     maxWidth: '800px',
-    gap: '50px',
+    gap: gap,
   };
 
   const leftColumnStyle = {

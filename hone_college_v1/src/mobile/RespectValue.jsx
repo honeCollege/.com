@@ -1,14 +1,17 @@
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
+import { useState, useEffect } from 'react';
 import HandShakeIcon from './hand-shake.png';
 
 export default function RespectValue() {
   const theme = useTheme();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const width = windowWidth < 500 ? 350 : 400;
 
   return (
     <div
       style={{
-        width: 400,
+        width: width,
         backgroundColor: '#f2f2f2',
         paddingTop: 50,
         height: 700,
